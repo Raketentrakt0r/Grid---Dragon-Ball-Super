@@ -1,0 +1,11 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px, 1fr));/* --Nuevo: Con esto se hace Responsive Designe: la funcion "auto-fill" calcula el ancho del grid,
+                                                                 segun sea necesario.*/
+                                                                /* la funcion "minmax" crea nuevas columnas ocupando el total del espacio cuando la pantalla se hace grande o pequena*/
+    
+    text-align: center;
+}
+
+
+

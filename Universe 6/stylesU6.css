@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(45, 168, 45);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+li, a {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: rgb(56, 9, 2);
+   text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 10px 10%;
+ }
+ 
+ .logo{
+    cursor: pointer;
+    margin-right: auto;
+    padding: 0 0 0 0;
+ }
+ 
+ .nav-links{
+    list-style: none;
+ }
+
+/* Esta linea separa los links de la navegacion*/
+.nav-links li {
+    display: inline-block;
+    padding: 0px 50px;
+ }
+ 
+ /*Tiempo del cambio de color de los links*/
+ .nav-links li a {
+    transition: all 0.2s ease 0s;
+ }
+ 
+ /*Cambio de color de los links*/
+ .nav-links li a:hover {
+    color: rgb(238, 238, 238);
+ }
+ 
+ .container > div {
+     display: block;
+     padding: 20px;    
+ }
+
+/*Tamano de logo y posicion*/
+.logo{
+    height: 160px;
+    text-align: center;
+ }
+
+/*Hace que la imagen crezca lentamente y que se le pueda hacer click si se agregan los valore height y width*/
+/*las imagenes van a avarcar el 100% de la pantalla*/
+.container img {
+    object-fit: cover;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+ }
+ 
+ /*Hace que la imagen crezca un poco por la funcion "hover"*/
+ .container img:hover {
+    transform: scale(1.1);
+ }
+
+ /* Team 6 */
+.team6{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: rgb(238, 238, 238);
+    
+}
+
+/*Tamano y marco de imagenes*/
+ .hit2{
+     width: 265px;
+     height: 150px;
+     border: 6px solid rgb(58, 58, 58);
+ }
+
+ .kyabe2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.caulifla2{
+    width: 265px;
+    height: 155px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+
+.kale2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.botamo2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.frost2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.magenta2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.saonel2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.pilina2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+.drRota2{
+    width: 265px;
+    height: 150px;
+    border: 6px solid rgb(58, 58, 58);
+}
+
+
+ /*Opacidad del fondo cuando se haga click en la imagen*/
+ .modal{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Esta linea escode la animacion de opacidad,imagen y texto*/
+    pointer-events: none; /*Hace posible gacer click para ir a la opacidad*/ 
+    transition: 0.25s ease-out;
+ }
+/*Clase .open agregada para ser utilizada por js*/
+ .modal.open{
+   opacity: 1;
+   pointer-events: all;
+ }
+
+ /*Tamano y posicion de la imagen despues del click*/
+.full-img{
+   position: absolute;
+   height: 60%;
+   height: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.8);
+   transition: all 0.25s ease-out;
+}
+
+/*Con esta linea se expande la imagen, no lo comprendo muy bien todavia*/
+.full-img.open{
+   transform: translate(-50%, -50%) scale(1);
+}
+
+ /*Posicion y color del texto*/
+.modal p{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 10%; /*Con estas 3 lineas centra el texto (bottom, left y tranform)*/
+    left: 50%;
+    transform: translate(-50%, -5%);
+ }
